@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  margin-top: 30px;
+}
+
+body {
+  margin: auto;
+  max-width: 600px;
+  background: radial-gradient(
+    circle,
+    rgb(52, 52, 170) 0%,
+    rgb(18, 33, 99) 89%,
+    rgb(18, 33, 99) 89%
+  );
+}
+
+main {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-left: 60px;
+  margin-top: 0px;
+}
+
+div {
+  height: 20px;
+  width: 20px;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 15px;
+  font-weight: 300;
+  color: #d8edea;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #d8edea;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 300;
+  color: #d8edea;
+  margin-top: 100px;
+  margin-left: -60px;
+}
+
+.score-display {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: rgb(133, 121, 107, 0.5);
+  padding-left: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  padding-top: 0px;
+}
+
+.column-left {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  display: inline;
+  margin-left: 60px;
+}
+
+.game {
+  width: 300px;
+}
+
+.grid {
+  width: 200px;
+  height: 400px;
+}
+
+.previous-shape {
+  width: 100px;
+  margin-left: 57px;
+}
+
+.previous-grid {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80px;
+}
+
+.block {
+  background-image: url(../images/blue_block.png);
+}
+
+.block2 {
+  background-image: url(../images/purple_block.png);
+}
+
+.block3 {
+  background-image: url(../images/green_block.png);
+}
+
+.block4 {
+  background-image: url(../images/navy_block.png);
+}
+
+.block5 {
+  background-image: url(../images/pink_block.png);
+}
+
+.grid {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+}
+
+.end {
+  background-color: #d8edea;
+}
+
+.button {
+  position: relative;
+  width: 220px;
+  height: 22px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  line-height: 23px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  display: block;
+  margin: 30px;
+  text-shadow: -1px -1px 0 #a84155;
+  background: #d25068;
+  border: 1px solid #d25068;
+  width: 120px;
+
+  background-image: -webkit-linear-gradient(top, #f66c7b, #d25068);
+  background-image: -moz-linear-gradient(top, #f66c7b, #d25068);
+  background-image: -ms-linear-gradient(top, #f66c7b, #d25068);
+  background-image: -o-linear-gradient(top, #f66c7b, #d25068);
+  background-image: linear-gradient(to bottom, #f66c7b, #d25068);
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset,
+    0 -1px 0 rgba(255, 255, 255, 0.1) inset, 0 4px 0 #ad4257,
+    0 4px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset,
+    0 -1px 0 rgba(255, 255, 255, 0.1) inset, 0 4px 0 #ad4257,
+    0 4px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset,
+    0 -1px 0 rgba(255, 255, 255, 0.1) inset, 0 4px 0 #ad4257,
+    0 4px 2px rgba(0, 0, 0, 0.5);
+}
+.button:before {
+  background: #f0f0f0;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(#d0d0d0),
+    to(#f0f0f0)
+  );
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+
+  position: absolute;
+  content: "";
+  left: -6px;
+  right: -6px;
+  top: -6px;
+  bottom: -10px;
+  z-index: -1;
+}
+
+.button:active {
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset,
+    0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  top: 5px;
+}
+.button:active:before {
+  top: -11px;
+  bottom: -5px;
+  content: "";
+}
+
+.button:hover {
+  background: #f66c7b;
+  background-image: -webkit-linear-gradient(top, #d25068, #f66c7b);
+  background-image: -moz-linear-gradient(top, #d25068, #f66c7b);
+  background-image: -ms-linear-gradient(top, #d25068, #f66c7b);
+  background-image: -o-linear-gradient(top, #d25068, #f66c7b);
+  background-image: linear-gradient(top, #d25068, #f66c7b);
+}
+
+.end {
+  background-image: url(/Users/limit/development/Tetris/images/blue_block.png);
+}
+
+.display {
+  text-align: center;
+  width: 175px;
+  height: 250px;
+  background: #f0f0f0;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(#d0d0d0),
+    to(#f0f0f0)
+  );
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+}
+
+.score {
+  padding-top: 15px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: #85796b;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.lines-display {
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: #85796b;
+  margin-left: -60px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #d8edea;
+  transition: color 0.4s ease;
+}
+
+.bold {
+  color: #f8de7e;
+}
+
+h3,
+footer {
+  color: white;
+}
+
+.close {
+  border-style: none;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: rgba(24, 39, 51, 0.85);
+}
